@@ -10,13 +10,12 @@ import GetStarted from './Components/GetStarted/GetStarted.jsx'
 import TransparentPricing from './Components/TransparentPricing/TransparentPricing.jsx'
 
 const fetchData = async () => {
-  const res = await fetch("/data.json");
+  const res = await fetch("./data.json");
   return res.json();
 }
+const dataPromise = fetchData();
 
 function App() {
-
-  const dataPromise = fetchData();
   console.log(dataPromise);
 
   const [selectedProducts, setSelectedProducts] = useState([]);
