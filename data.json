@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "An advanced AI tool for professional writing, editing, and content creation.",
+    "price": 19,
+    "quality1": "Grammar-aware editor",
+    "quality2": "Tone and style suggestions",
+    "quality3": "Multi-language support",
+    "image": "/writing_2327400 1.png",
+    "rating": "New"
+  },
+  {
+    "id": 2,
+    "name": "DesignGenie",
+    "description": "AI-powered graphic design assistant for social media and marketing visuals.",
+    "price": 29,
+    "quality1": "Template library",
+    "quality2": "Auto color palette generator",
+    "quality3": "Drag-and-drop editor",
+    "image": "/design-tool.png",
+    "rating": "Popular"
+  },
+  {
+    "id": 3,
+    "name": "CodeAssist AI",
+    "description": "AI coding partner that writes, debugs, and explains code snippets.",
+    "price": 15,
+    "quality1": "Multi-language support",
+    "quality2": "Error detection & fix suggestions",
+    "quality3": "Intelligent code completions",
+    "image": "/portfolio.png",
+    "rating": "Best Seller"
+  },
+  {
+    "id": 4,
+    "name": "MarketMind Analytics",
+    "description": "AI-driven market analysis and prediction tool for investors.",
+    "price": 49,
+    "quality1": "Real-time trend forecasting",
+    "quality2": "Customizable dashboards",
+    "quality3": "Automated alerts",
+    "image": "/operation.png",
+    "rating": "New"
+  },
+  {
+    "id": 5,
+    "name": "VoiceFlow Studio",
+    "description": "Create voice AI assistants and conversational bots without coding.",
+    "price": 39,
+    "quality1": "Drag-and-drop conversation builder",
+    "quality2": "Multi-platform deployment",
+    "quality3": "Natural speech understanding",
+    "image": "/social-media.png",
+    "rating": "Popular"
+  },
+  {
+    "id": 6,
+    "name": "TaskMaster AI",
+    "description": "AI task planner and productivity booster for teams and individuals.",
+    "price": 12,
+    "quality1": "Smart scheduling",
+    "quality2": "Priority prediction",
+    "quality3": "Cross-platform sync",
+    "image": "/design-tool.png",
+    "rating": "Best Seller"
+  }
+]
