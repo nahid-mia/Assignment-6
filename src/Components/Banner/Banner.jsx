@@ -1,5 +1,6 @@
 import React from 'react';
 import { CiPlay1 } from "react-icons/ci";
+import bannerImage from '../../assets/banner.png'
 
 const Banner = () => {
     return (
@@ -24,7 +25,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div>
-                    <img src="/src/assets/banner.png" alt="" />
+                    <img src={bannerImage} alt="" />
                 </div>
             </div>
         </div>

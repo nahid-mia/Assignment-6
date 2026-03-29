@@ -10,7 +10,7 @@ import GetStarted from './Components/GetStarted/GetStarted.jsx'
 import TransparentPricing from './Components/TransparentPricing/TransparentPricing.jsx'
 
 const fetchData = async () => {
-  const res = await fetch("/public/data.json");
+  const res = await fetch("/data.json");
   return res.json();
 }
 
