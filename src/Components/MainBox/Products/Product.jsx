@@ -1,8 +1,16 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Product = ({ product, selectedProducts, setSelectedProducts, money, setMoney }) => {
 
     const isSelected = selectedProducts.some(p => p.id === product.id); // I learned this from AI so that tab changing is not affected
+
+    const notify = () => toast(
+        <>
+            {product.name} added to the cart<br />
+            For ${product.price}
+        </>
+    );;
 
     const handleSelect = () => {
         if (selectedProducts.some(p => p.id === product.id)) {
@@ -10,6 +18,7 @@ const Product = ({ product, selectedProducts, setSelectedProducts, money, setMon
         }
         setSelectedProducts([...selectedProducts, product]);
         setMoney(money + product.price);
+        notify()
     }
 
     return (

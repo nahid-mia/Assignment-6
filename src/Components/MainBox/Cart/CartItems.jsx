@@ -1,10 +1,19 @@
 import React from 'react';
 import CartItem from './CartItem';
+import { toast } from 'react-toastify';
 
 const CartItems = ({ selectedProducts, setSelectedProducts, money, setMoney }) => {
 
+    const notify = () => toast(
+        <>
+            You have purchased all the items <br />
+            Total used ${money}
+        </>
+    );
+
     const checkOut = () => {
         setSelectedProducts([]);
+        notify();
         setMoney(0);
     }
 

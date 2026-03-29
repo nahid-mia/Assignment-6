@@ -1,12 +1,19 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const CartItem = ({ product, selectedProducts, setSelectedProducts, money, setMoney }) => {
-    console.log(product);
+
+    const notify = () => toast(
+        <>
+            {product.name} removed from the cart
+        </>
+    );
 
     const handleRemove = () => {
         const updated = selectedProducts.filter(p => p.id !== product.id)
         setSelectedProducts(updated);
         setMoney(money - product.price);
+        notify();
     }
 
     return (

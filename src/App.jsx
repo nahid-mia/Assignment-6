@@ -8,6 +8,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Cart from './Components/MainBox/Cart/Cart'
 import GetStarted from './Components/GetStarted/GetStarted.jsx'
 import TransparentPricing from './Components/TransparentPricing/TransparentPricing.jsx'
+import { ToastContainer } from 'react-toastify'
 
 const fetchData = async () => {
   const res = await fetch("./data.json");
@@ -31,7 +32,7 @@ function App() {
       <Suspense fallback={<div>data is loading</div>}>{activeTab === "products" ? <Products dataPromise={dataPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} money={money} setMoney={setMoney}></Products> : <Cart selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} money={money} setMoney={setMoney}></Cart>}</Suspense>
       <GetStarted></GetStarted>
       <TransparentPricing></TransparentPricing>
-      
+      <ToastContainer></ToastContainer>
     </>
   )
 }
