@@ -1,11 +1,12 @@
 import React from 'react';
 
-const CartItem = ({ product, selectedProducts, setSelectedProducts }) => {
+const CartItem = ({ product, selectedProducts, setSelectedProducts, money, setMoney }) => {
     console.log(product);
 
     const handleRemove = () => {
         const updated = selectedProducts.filter(p => p.id !== product.id)
         setSelectedProducts(updated);
+        setMoney(money - product.price);
     }
 
     return (

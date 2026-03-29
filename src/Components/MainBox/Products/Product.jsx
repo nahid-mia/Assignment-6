@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Product = ({ product, selectedProducts, setSelectedProducts }) => {
+const Product = ({ product, selectedProducts, setSelectedProducts, money, setMoney }) => {
 
     const isSelected = selectedProducts.some(p => p.id === product.id); // I learned this from AI so that tab changing is not affected
 
@@ -9,6 +9,7 @@ const Product = ({ product, selectedProducts, setSelectedProducts }) => {
             return;
         }
         setSelectedProducts([...selectedProducts, product]);
+        setMoney(money + product.price);
     }
 
     return (

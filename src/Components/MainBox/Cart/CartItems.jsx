@@ -1,22 +1,23 @@
 import React from 'react';
 import CartItem from './CartItem';
 
-const CartItems = ({ selectedProducts, setSelectedProducts }) => {
+const CartItems = ({ selectedProducts, setSelectedProducts, money, setMoney }) => {
 
     const checkOut = () => {
         setSelectedProducts([]);
+        setMoney(0);
     }
 
     return (
         <div>
-            <div className='w-10/12 flex flex-col space-y-4 mx-auto p-5 shadow-2xl'>
+            <div className='w-10/12 flex flex-col space-y-4 mx-auto p-5 shadow-2xl rounded-2xl'>
                 <p className='font-bold text-2xl'>Your Cart</p>
                 {selectedProducts.map(product => {
-                    return <CartItem key={product.id} product={product} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts}></CartItem>
+                    return <CartItem key={product.id} product={product} setSelectedProducts={setSelectedProducts} selectedProducts={selectedProducts} money={money} setMoney={setMoney}></CartItem>
                 })}
                 <div className='flex justify-between'>
                     <p>Total</p>
-                    <p className='font-bold text-xl'>$78</p>
+                    <p className='font-bold text-xl'>${money}</p>
                 </div>
                 <button
                     onClick={() => checkOut()}
