@@ -3,7 +3,8 @@ import { FaRegCopyright } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
-import LinkBack from '../Footer/LinkBack';
+import LinkBack from './linkBack';
+
 
 const Footer = () => {
     const ul1 = ["Features", "pricing", "Templates", "Integrations"]
