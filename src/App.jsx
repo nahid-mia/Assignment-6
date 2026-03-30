@@ -19,7 +19,6 @@ const fetchData = async () => {
 const dataPromise = fetchData();
 
 function App() {
-  console.log(dataPromise);
 
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [activeTab, setActiveTab] = useState("products");

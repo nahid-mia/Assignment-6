@@ -1,9 +1,9 @@
 import React from 'react';
-import LinkBack from './linkBack';
 import { FaRegCopyright } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { FaSquareInstagram } from "react-icons/fa6";
+import LinkBack from '../Footer/LinkBack';
 
 const Footer = () => {
     const ul1 = ["Features", "pricing", "Templates", "Integrations"]
@@ -21,21 +21,21 @@ const Footer = () => {
                     <div>
                         <ul className='text-[12px] space-y-3'>
                             <li className='font-bold text-lg'>Product</li>
-                            {ul1.map(el => { return <LinkBack el={el}></LinkBack> }
+                            {ul1.map(el => { return <LinkBack key={ul1.indexOf(el)} el={el}></LinkBack> }
                             )}
                         </ul>
                     </div>
                     <div>
                         <ul className='text-[12px] space-y-3'>
                             <li className='font-bold text-lg'>Company</li>
-                            {ul2.map(el => { return <LinkBack el={el}></LinkBack> }
+                            {ul2.map(el => { return <LinkBack key={ul2.indexOf(el)} el={el}></LinkBack> }
                             )}
                         </ul>
                     </div>
                     <div>
                         <ul className='text-[12px] space-y-3'>
                             <li className='font-bold text-lg'>Resources</li>
-                            {ul3.map(el => { return <LinkBack el={el}></LinkBack> }
+                            {ul3.map(el => { return <LinkBack key={ul3.indexOf(el)} el={el}></LinkBack> }
                             )}
                         </ul>
                     </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                     </div>
                     <div>
                         <ul className='flex gap-4 text-[14px]'>
-                            {ul4.map(el => { return <LinkBack el={el}></LinkBack> }
+                            {ul4.map(el => { return <LinkBack key={ul4.indexOf(el)} el={el}></LinkBack> }
                             )}
                         </ul>
                     </div>
