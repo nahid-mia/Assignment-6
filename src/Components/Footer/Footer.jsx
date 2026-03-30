@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className='bg-[#101727]'>
             <div className='flex flex-col w-10/12 text-white mx-auto pb-20'>
-                <div className='flex justify-between mt-20'>
+                <div className='grid grid-cols-2 gap-7 md:flex justify-between mt-20'>
                     <div className='space-y-3'>
                         <p className='font-bold text-4xl'>Digitools</p>
                         <p className='font-semibold text-gray-100 text-[14px]'>Premium digital tools for creators, professionals, and businesses. <br /> Work smarter with our suite of powerful tools.</p>
@@ -49,7 +49,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className='text-white my-7' />
-                <div className='flex justify-between'>
+                <div className='flex flex-col-reverse items-center gap-4 md:flex-row md:justify-between'>
                     <div className='flex gap-1 items-center'>
                         <FaRegCopyright />
                         <p className='text-[14px]'>2026 Digitools. All rights reserved.</p>

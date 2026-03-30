@@ -5,7 +5,7 @@ const TransparentPricing = () => {
         <div>
             <div className='flex flex-col items-center mt-10'>
                 <div className='mt-10'>
-                    <p className='text-6xl font-bold'>Simple, Transparent Pricing</p>
+                    <p className='text-3xl text-center md:text-6xl font-bold'>Simple, Transparent Pricing</p>
                     <p className='text-[16px] text-center mt-2'>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
                 </div>
                 <div className='w-10/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mb-20 mt-10'>

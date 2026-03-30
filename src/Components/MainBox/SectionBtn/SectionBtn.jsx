@@ -4,8 +4,8 @@ const SectionBtn = ({ activeTab, setActiveTab, selectedProducts }) => {
     return (
         <div>
             <div className='flex flex-col space-y-4 items-center justify-center mx-auto mt-30 mb-10'>
-                <p className='text-4xl font-bold'>Premium Digital Tools</p>
-                <p className='text-[16px] text-gray-500'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
+                <p className='text-4xl font-bold text-center'>Premium Digital Tools</p>
+                <p className='text-[16px] text-gray-500 text-center px-8'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
                 <div className='flex'>
                     <button
                         onClick={() => setActiveTab("products")}
