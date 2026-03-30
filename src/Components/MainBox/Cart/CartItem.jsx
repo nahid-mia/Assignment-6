@@ -20,7 +20,7 @@ const CartItem = ({ product, selectedProducts, setSelectedProducts, money, setMo
         <div>
             <div className='flex p-3 justify-between bg-gray-200 items-center rounded-2xl'>
                 <div className='flex gap-2'>
-                    <img className='mask mask-circle outline-2 outline-gray-600 rounded-full p-2' src={product.image} alt="" />
+                    <img className='mask mask-circle outline-2 outline-gray-600 rounded-full p-2' src={product.icon} alt="" />
                     <div>
                         <p className='font-bold text-xl'>{product.name}</p>
                         <p>${product.price}</p>
