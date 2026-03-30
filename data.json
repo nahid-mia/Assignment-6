@@ -4,65 +4,89 @@
     "name": "AI Writing Pro",
     "description": "An advanced AI tool for professional writing, editing, and content creation.",
     "price": 19,
-    "quality1": "Grammar-aware editor",
-    "quality2": "Tone and style suggestions",
-    "quality3": "Multi-language support",
-    "image": "https://i.ibb.co.com/1f7QCVTM/writing-2327400-1.png",
-    "rating": "New"
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Grammar-aware editor",
+      "Tone and style suggestions",
+      "Multi-language support"
+    ],
+    "icon": "https://i.ibb.co.com/1f7QCVTM/writing-2327400-1.png"
   },
   {
     "id": 2,
     "name": "DesignGenie",
     "description": "AI-powered graphic design assistant for social media and marketing visuals.",
     "price": 29,
-    "quality1": "Template library",
-    "quality2": "Auto color palette generator",
-    "quality3": "Drag-and-drop editor",
-    "image": "https://i.ibb.co.com/XZbF4BSm/design-tool.png",
-    "rating": "Popular"
+    "period": "yearly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Template library",
+      "Auto color palette generator",
+      "Drag-and-drop editor"
+    ],
+    "icon": "https://i.ibb.co.com/XZbF4BSm/design-tool.png"
   },
   {
     "id": 3,
     "name": "CodeAssist AI",
     "description": "AI coding partner that writes, debugs, and explains code snippets.",
     "price": 15,
-    "quality1": "Multi-language support",
-    "quality2": "Error detection & fix suggestions",
-    "quality3": "Intelligent code completions",
-    "image": "https://i.ibb.co.com/gnbzpX8/portfolio.png",
-    "rating": "Best Seller"
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Multi-language support",
+      "Error detection & fix suggestions",
+      "Intelligent code completions"
+    ],
+    "icon": "https://i.ibb.co.com/gnbzpX8/portfolio.png"
   },
   {
     "id": 4,
     "name": "MarketMind Analytics",
     "description": "AI-driven market analysis and prediction tool for investors.",
     "price": 49,
-    "quality1": "Real-time trend forecasting",
-    "quality2": "Customizable dashboards",
-    "quality3": "Automated alerts",
-    "image": "https://i.ibb.co.com/F4F6C457/operation.png",
-    "rating": "New"
+    "period": "yearly",
+    "tag": "New",
+    "tagType": "new",
+    "features": [
+      "Real-time trend forecasting",
+      "Customizable dashboards",
+      "Automated alerts"
+    ],
+    "icon": "https://i.ibb.co.com/F4F6C457/operation.png"
   },
   {
     "id": 5,
     "name": "VoiceFlow Studio",
     "description": "Create voice AI assistants and conversational bots without coding.",
     "price": 39,
-    "quality1": "Drag-and-drop conversation builder",
-    "quality2": "Multi-platform deployment",
-    "quality3": "Natural speech understanding",
-    "image": "https://i.ibb.co.com/DHNBKrGx/social-media.png",
-    "rating": "Popular"
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": [
+      "Drag-and-drop conversation builder",
+      "Multi-platform deployment",
+      "Natural speech understanding"
+    ],
+    "icon": "https://i.ibb.co.com/DHNBKrGx/social-media.png"
   },
   {
     "id": 6,
     "name": "TaskMaster AI",
     "description": "AI task planner and productivity booster for teams and individuals.",
     "price": 12,
-    "quality1": "Smart scheduling",
-    "quality2": "Priority prediction",
-    "quality3": "Cross-platform sync",
-    "image": "https://i.ibb.co.com/XZbF4BSm/design-tool.png",
-    "rating": "Best Seller"
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": [
+      "Smart scheduling",
+      "Priority prediction",
+      "Cross-platform sync"
+    ],
+    "icon": "https://i.ibb.co.com/XZbF4BSm/design-tool.png"
   }
 ]
