@@ -1,6 +1,12 @@
 import React from 'react';
+import Links from '../Links';
 
 const TransparentPricing = () => {
+
+    const arr1 = ["Access to 10 free tools", "Basic templates", "Community support", "1 project per month"];
+    const arr2 = ["Unlimited templates", "Priority support", "Unlimited projects", "Cloud sync", "Advanced analytics"];
+    const arr3 = ["Everything in Pro", "Team collaboration", "Custom integrations", "Dedicated support"];
+
     return (
         <div>
             <div className='flex flex-col items-center mt-10'>
@@ -15,22 +21,9 @@ const TransparentPricing = () => {
                         <p className='text-gray-500 mb-4'><span className='font-bold text-black text-2xl'>$0</span>/Month</p>
                         <div>
                             <ul>
-                                <li className='flex items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Access to 10 free tools</p>
-                                </li>
-                                <li className='flex items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Basic templates</p>
-                                </li>
-                                <li className='flex items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Community support</p>
-                                </li>
-                                <li className='flex items-center'>
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>1 project per month</p>
-                                </li>
+                                {arr1.map(el => {
+                                    return <Links key={arr1.indexOf(el)} el={el}></Links>
+                                })}
                             </ul>
                         </div>
                         <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-10/12 absolute bottom-2 rounded-3xl text-white'>Get Started Free</button>
@@ -42,16 +35,9 @@ const TransparentPricing = () => {
                         <p className=' mb-4'><span className='font-bold text-2xl'>$29</span>/Month</p>
                         <div>
                             <ul>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Unlimited templates</p></li>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Priority support</p></li>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Unlimited projects</p></li>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Cloud sync</p></li>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Advanced analytics</p></li>
+                                {arr2.map(el => {
+                                    return <Links key={arr2.indexOf(el)} el={el}></Links>
+                                })}
                             </ul>
                         </div>
                         <button className='btn bg-white w-10/12 absolute bottom-2 left-7 rounded-3xl'>Start Pro Trial</button>
@@ -62,14 +48,9 @@ const TransparentPricing = () => {
                         <p className='text-gray-500 mb-4'><span className='font-bold text-black text-2xl'>$99</span>/Month</p>
                         <div>
                             <ul>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Everything in Pro</p></li>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Team collaboration</p></li>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Custom integrations</p></li>
-                                <li className='flex items-center'><svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                    <p>Dedicated support</p></li>
+                                {arr3.map(el => {
+                                    return <Links key={arr3.indexOf(el)} el={el}></Links>
+                                })}
                             </ul>
                         </div>
                         <button className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] w-10/12  absolute bottom-2 text-white rounded-3xl'>Contact Sales</button>
