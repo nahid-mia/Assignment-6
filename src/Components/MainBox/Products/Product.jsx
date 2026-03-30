@@ -27,7 +27,7 @@ const Product = ({ product, selectedProducts, setSelectedProducts, money, setMon
                 <div className="card-body">
                     <div className='relative'>
                         <img className='mask mask-circle outline-2 outline-gray-600 rounded-full p-2 self-end' src={product.image} alt="" />
-                        <span className="px-3 text-[14px] rounded-3xl bg-green-400 w-fit absolute top-0 right-0">{product.rating}</span>
+                        <span className={`px-3 text-[14px] rounded-3xl ${product.rating === "New" ? "bg-green-300 text-green-800" : product.rating === "Popular" ? "bg-purple-300 text-purple-800" : product.rating === "Best Seller" ? "bg-[#fef3c6] text-[#bb4d00]" : ""} w-fit absolute top-0 right-0`}>{product.rating}</span>
                     </div>
 
                     <div className="flex justify-between">
