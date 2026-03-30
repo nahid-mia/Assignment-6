@@ -9,6 +9,8 @@ import Cart from './Components/MainBox/Cart/Cart'
 import GetStarted from './Components/GetStarted/GetStarted.jsx'
 import TransparentPricing from './Components/TransparentPricing/TransparentPricing.jsx'
 import { ToastContainer } from 'react-toastify'
+import FooterExtra from './Components/Footer/FooterExtra.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 const fetchData = async () => {
   const res = await fetch("./data.json");
@@ -29,9 +31,11 @@ function App() {
       <Banner></Banner>
       <BannerExtra></BannerExtra>
       <SectionBtn activeTab={activeTab} setActiveTab={setActiveTab} selectedProducts={selectedProducts}></SectionBtn>
-      <Suspense fallback={<div>data is loading</div>}>{activeTab === "products" ? <Products dataPromise={dataPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} money={money} setMoney={setMoney}></Products> : <Cart selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} money={money} setMoney={setMoney}></Cart>}</Suspense>
+      <Suspense fallback={<span className="loading loading-bars loading-lg"></span>}>{activeTab === "products" ? <Products dataPromise={dataPromise} selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} money={money} setMoney={setMoney}></Products> : <Cart selectedProducts={selectedProducts} setSelectedProducts={setSelectedProducts} money={money} setMoney={setMoney}></Cart>}</Suspense>
       <GetStarted></GetStarted>
       <TransparentPricing></TransparentPricing>
+      <FooterExtra></FooterExtra>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
     </>
   )
